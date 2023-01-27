@@ -1,6 +1,11 @@
 package menu;
 import java.util.Scanner;
 public class Menu {
+	/**
+	 * 
+	 * Funcion para pedir y recoger las opciones y numeros del programa
+	 * 
+	 */
     private static Scanner teclado = new Scanner(System.in);
     
     public int[] pedirNumeros(){
@@ -28,7 +33,7 @@ public class Menu {
         boolean ret = false;
         String respuesta;
         do {
-            System.out.print ("¿Desea continuar trabajando con la calculadora? [s / n]");
+            System.out.print ("ï¿½Desea continuar trabajando con la calculadora? [s / n]");
             respuesta = teclado.next();
         } while (!((respuesta.equalsIgnoreCase("s")) || (respuesta.equalsIgnoreCase("n"))
                     ));
